@@ -9,7 +9,7 @@ import com.alibaba.android.arouter.launcher.ARouter;
  * 用途：
  **/
 public class NetServiceUtil {
-    public static String PATH_SERVICE = "/net/service";
+    public final static String PATH_SERVICE = "/net/service";
     public static INetService getService(){
         return (INetService) ARouter.getInstance().build(PATH_SERVICE).navigation();
     }
