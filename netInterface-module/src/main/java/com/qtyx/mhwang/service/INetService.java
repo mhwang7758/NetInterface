@@ -1,4 +1,4 @@
-package com.qtyx.mhwang.netinterface_module;
+package com.qtyx.mhwang.service;
 
 import com.alibaba.android.arouter.facade.template.IProvider;
 

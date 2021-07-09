@@ -1,6 +1,8 @@
-package com.qtyx.mhwang.netinterface_module;
+package com.qtyx.mhwang.service;
 
 import com.alibaba.android.arouter.launcher.ARouter;
+
+import java.util.Map;
 
 /**
  * 公司：广州成林科技信息
@@ -9,8 +11,13 @@ import com.alibaba.android.arouter.launcher.ARouter;
  * 用途：
  **/
 public class NetServiceUtil {
-    public final static String PATH_SERVICE = "/net/service";
+    public final static String PATH_SERVICE = "/mhwang/service";
     public static INetService getService(){
         return (INetService) ARouter.getInstance().build(PATH_SERVICE).navigation();
+//        return (INetService) ARouter.getInstance().navigation(INetService.class);
+    }
+
+    public static boolean connect(Map<String, Object> map){
+        return getService().connect(map);
     }
 }
