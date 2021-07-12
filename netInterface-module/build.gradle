@@ -41,6 +41,6 @@ dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation 'com.github.mhwang7758:Common:1.0.0'
 
-//    api 'com.alibaba:arouter-api:1.4.1'
+    api 'com.alibaba:arouter-api:1.4.1'
     annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
 }

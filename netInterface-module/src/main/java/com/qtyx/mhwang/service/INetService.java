@@ -26,4 +26,11 @@ public interface INetService extends IProvider {
     public void statusReport(Map<String,Object> params);
     public void supplyReport(Map<String,Object> params);
     public void eventReport(Map<String,Object> params);
+
+    public void uniSearchProSkuSale(Map<String,Object> params);
+    public void commonSubmitOrder(Map<String,Object> params);
+    public void uniQueryMemberInfo(Map<String,Object> params);
+    public void couponWithdraw(Map<String,Object> params);
+    public void setErrMsg(Map<String,Object> params);
+    public void getErrMsg(Map<String,Object> params);
 }
