@@ -12,6 +12,7 @@ import java.util.Map;
  **/
 public interface INetService extends IProvider {
     public boolean connect(Map<String,Object> params);
+    public boolean isLogin();
     public void init(Map<String,Object> params);
     public void login(Map<String,Object> params);
     public void logout(Map<String,Object> params);
