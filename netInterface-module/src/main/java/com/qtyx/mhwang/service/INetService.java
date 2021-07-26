@@ -34,4 +34,6 @@ public interface INetService extends IProvider {
     public void couponWithdraw(Map<String,Object> params);
     public void setErrMsg(Map<String,Object> params);
     public void getErrMsg(Map<String,Object> params);
+
+    public void enqueueReport(Map<String,Object> params);
 }
