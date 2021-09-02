@@ -36,4 +36,6 @@ public interface INetService extends IProvider {
     public void getErrMsg(Map<String,Object> params);
 
     public void enqueueReport(Map<String,Object> params);
+
+    public void getProducts(Map<String,Object> params);
 }
